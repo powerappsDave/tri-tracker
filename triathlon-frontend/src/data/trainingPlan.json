@@ -1,0 +1,28 @@
+[
+  {
+    "week": 1,
+    "stage": "Build Phase",
+    "days": [
+      { "day": "Monday", "activity": "Swim - 500m" },
+      { "day": "Tuesday", "activity": "Bike - 20km" },
+      { "day": "Wednesday", "activity": "Run - 5km" },
+      { "day": "Thursday", "activity": "Rest" },
+      { "day": "Friday", "activity": "Swim - 600m" },
+      { "day": "Saturday", "activity": "Bike - 25km" },
+      { "day": "Sunday", "activity": "Run - 6km" }
+    ]
+  },
+  {
+    "week": 2,
+    "stage": "Strength Phase",
+    "days": [
+      { "day": "Monday", "activity": "Swim - 600m" },
+      { "day": "Tuesday", "activity": "Bike - 22km" },
+      { "day": "Wednesday", "activity": "Run - 6km" },
+      { "day": "Thursday", "activity": "Rest" },
+      { "day": "Friday", "activity": "Swim - 700m" },
+      { "day": "Saturday", "activity": "Brick - Bike 20km + Run 3km" },
+      { "day": "Sunday", "activity": "Run - 7km" }
+    ]
+  }
+]
