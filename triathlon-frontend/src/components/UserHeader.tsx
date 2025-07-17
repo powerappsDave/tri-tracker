@@ -34,9 +34,8 @@ const UserHeader: React.FC<IUserProps> = ({ userId, setUser }) => {
   }, [userId, setUser]);
 
   return (
-  <div className="text-white bg-amber-600 pb-4 pt-4">
     <h1 className="text-xl ml-4 font-bold">{userDetails?.role} - {userDetails?.name}</h1>
-  </div>) 
+  )
 };
 
 export default UserHeader;

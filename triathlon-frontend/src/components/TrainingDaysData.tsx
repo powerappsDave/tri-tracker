@@ -47,15 +47,15 @@ const TrainingDaysData = ({userId, weekNumber, onDaySelected, refreshWeekOnUpdat
 
     
     return(
-        <div className='flex gap-1'>
+        <div className='flex gap-2 ml-2'>
             {trainingDays.filter(week => week.week_number === weekNumber).map((day) => (
-                <div key={day.id} onClick={() => onDaySelected(day.id)} className={`w-40 h-auto ${day.completed ? 'text-green-500' : 'text-red-500' }  bg-gray-50 border-2 border-gray-600 p-1 m-1 mb-0 mt-0 flex flex-col items-center overflow-hidden text-center cursor-pointer`}>
-                    <p className="font-bold w-full truncate">{day.day}</p>
+                <div key={day.id} onClick={() => onDaySelected(day.id)} className={`w-14 xl:w-32 lg:w-24 md:w-20 xs:w-10 h-auto ${day.completed ? 'text-green-500' : 'text-red-500' }  bg-gray-50 border-2 border-gray-600 p-1 m-1 mr-0 flex flex-col items-center overflow-hidden text-center cursor-pointer`}>
+                    <label className="font-bold w-full truncate text-xs md:text-lg">{day.day}</label>
                     {day.activity.toUpperCase().includes("RUN") && (<FontAwesomeIcon icon={faRunning} />)}
                     {day.activity.toUpperCase().includes("SWIM") && (<FontAwesomeIcon icon={faSwimmer} />)}
                     {day.activity.toUpperCase().includes("BIKE") && (<FontAwesomeIcon icon={faBicycle} />)}
                     {day.activity.toUpperCase().includes("REST") && (<FontAwesomeIcon icon={faTired} />)}
-                    <p >{day.activity_type}</p>
+                    <label className='hidden md:block'>{day.activity_type}</label>
                 </div>
             ))}
         </div>

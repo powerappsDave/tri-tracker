@@ -13,9 +13,10 @@ type DisplayUserPropHeaders = {
   setDisplayUser: React.Dispatch<
     React.SetStateAction<IProps["loggedInUser"]>
   >;
+  minimiseSide: boolean
 };
 
-const AthleteDropdown: React.FC<DisplayUserPropHeaders> = ({setDisplayUser, loggedInUser,}) => {
+const AthleteDropdown: React.FC<DisplayUserPropHeaders> = ({setDisplayUser, loggedInUser, minimiseSide}) => {
   const [dropdownData, setDropdownData] = useState<AthleteCoach>([]);
   const [selectedAthleteId, setSelectedAthleteId] = useState<number | string>("");
   useEffect(() => {
@@ -54,7 +55,7 @@ const AthleteDropdown: React.FC<DisplayUserPropHeaders> = ({setDisplayUser, logg
 
   if (loggedInUser?.role.toUpperCase() === "COACH") {
     return (
-      <select className="bg-gray-50 rounded-sm ml-2 mt-2" value={selectedAthleteId} onChange={handleChange}>
+      <select className={`bg-gray-50 rounded-sm ml-2 mt-2 mr-1 ${minimiseSide && 'w-20 overflow-hidden whitespace-nowrap text-ellipsis'}`} value={selectedAthleteId} onChange={handleChange}>
         <option value="" disabled>
           Select Athlete
         </option>

@@ -90,12 +90,11 @@ const TrainingDayItemData: FC<TrainingDayItemPropHeaders> = ({dayId, setRefreshW
     if (error) return <p>Error: {error}</p>;
     
     return(
-        <div>
-            <form className="max-w-2xl ml-5 ">
-                <h2 className='pt-4 pb-4 text-gray-50 text-2xl font-bold'>{trainingDayItem?.day}</h2>
-                <div className="mb-5 flex items-center">
-                    <label className="w-36 text-sm font-medium  text-gray-50  dark:text-white mr-4">Activity Type:</label>
-                    <select onChange={handleChange} className='flex-1 w-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg' name="activity_type" id="activity_type">
+            <form className="max-w-sm sm:max-w-2xl ml-5 ">
+                <h2 className='pt-4 pb-4 text-amber-900 text-2xl font-bold'>{trainingDayItem?.day}</h2>
+                <div className="mb-2 md:mb-5 md:flex items-center">
+                    <label className="w-36 text-sm font-medium  text-amber-900  dark:text-white mr-4">Activity Type:</label>
+                    <select onChange={handleChange} className='md:flex-1 w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg' name="activity_type" id="activity_type">
                         {activityTypes.map((type) => (
                             <option key={type} selected={dataToUpdate.activity_type === type} value={type}>
                             {type}
@@ -104,40 +103,40 @@ const TrainingDayItemData: FC<TrainingDayItemPropHeaders> = ({dayId, setRefreshW
                     </select>
                 </div>
 
-                <div className="mb-5 flex items-center">
-                    <label className="w-36 text-sm font-medium  text-gray-50   mr-4">Activity:</label>
+                <div className="mb-2 md:mb-5 md:flex items-center">
+                    <label className="w-36 text-sm font-medium  text-amber-900 mr-4">Activity:</label>
                     <input
                         onChange={handleChange}
                         type="text"
                         name="activity"
-                        className="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                        className="md: flex-1 w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                         value={dataToUpdate.activity}
                         readOnly={userRole.toUpperCase() !== 'COACH'}
                         required />
                 </div>
 
-                <div className="mb-5 flex items-center">
-                    <label className="w-36 text-sm font-medium  text-gray-50  mr-4">Description:</label>
+                <div className="mb-2 md:mb-5 md:flex items-center">
+                    <label className="w-36 text-sm font-medium  text-amber-900  mr-4">Description:</label>
                     <textarea 
                     onChange={handleChange} name='description' value={dataToUpdate.description} 
                     readOnly={userRole.toUpperCase() !== 'COACH'}
-                    className="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                    className="md: flex-1 w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                     required>
                     </textarea>
                 </div>
 
-                <div className="mb-5 flex items-center">
-                    <label className="w-36 text-sm font-medium  text-gray-50 mr-4">Notes:</label>
+                <div className="mb-5 md:flex items-center">
+                    <label className="w-36 text-sm font-medium  text-amber-900 mr-4">Notes:</label>
                     <input
                         onChange={handleChange}
                         type="text"
                         name="notes"
-                        className="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                        className="md: flex-1 w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                         value={dataToUpdate.notes}
                         required
                     />
                 </div>
-                <div className="flex items-start mb-5">
+                <div className="flex items-start mb-2 md:mb-5">
                     <div className="flex items-center h-5">
                         <input id="completed" name="completed" type="checkbox" checked={dataToUpdate.completed} onChange={(e) => setDataToUpdate((prevState) => 
                         ({
@@ -147,11 +146,10 @@ const TrainingDayItemData: FC<TrainingDayItemPropHeaders> = ({dayId, setRefreshW
                          }className="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"/>
                         
                     </div>
-                    <label className="ms-2 text-sm font-medium text-gray-50">Completed</label>
+                    <label className="ms-2 text-sm font-medium text-amber-900">Completed</label>
                 </div>
-                <button type="submit" onClick={handleSubmit} className="text-white bg-green-500 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center cursor-pointer">Submit</button>
+                <button type="submit" onClick={handleSubmit} className="text-white bg-green-500 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer">Submit</button>
             </form>
-        </div>
     )
 }
 

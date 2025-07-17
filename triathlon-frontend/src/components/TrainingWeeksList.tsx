@@ -11,9 +11,10 @@ type TrainingWeekHeaderProps = {
     onWeekSelect: (weekNumber: number) => void
     selectedWeek: number
     setDayId: (dayNumber: number | null) => void
+    minimiseSide: boolean
 }
 
-const TrainingWeeksList: React.FC<TrainingWeekHeaderProps> = ({userId, onWeekSelect, selectedWeek, setDayId}) => {
+const TrainingWeeksList: React.FC<TrainingWeekHeaderProps> = ({userId, onWeekSelect, selectedWeek, setDayId, minimiseSide}) => {
     const [trainingWeeks, setTrainingWeeks] = useState<TrainingWeek[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -62,11 +63,11 @@ const TrainingWeeksList: React.FC<TrainingWeekHeaderProps> = ({userId, onWeekSel
             {trainingWeeks.map((week) => (
                 <div onClick={() => (onWeekSelect(week.week_number), setDayId(null))}
                 key={week.id}
-                className={`max-w-sm m-2 p-1 border rounded ${week.week_number === selectedWeek ? 'bg-amber-100': 'bg-gray-50'}  dark:bg-gray-800 cursor-pointer`}
+                className={`h-full m-1 sm:m-2 p-0 pl-2 border rounded ${week.week_number === selectedWeek ? 'bg-amber-100': 'bg-gray-50'}  dark:bg-gray-800 cursor-pointer ${minimiseSide && 'w-20 overflow-hidden whitespace-nowrap text-ellipsis'}`}
                 >
-                <p className="text-amber-600 font-bold text-xs">
+                <label className="text-amber-900 font-bold text-xs md: text-md">
                     Week {week.week_number} - {week.phase}
-                </p>
+                </label>
             </div>
         ))}
     </div>
