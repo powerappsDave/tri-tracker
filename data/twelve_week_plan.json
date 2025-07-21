@@ -1,0 +1,726 @@
+{
+  "Week 1": {
+    "phase": "Base",
+    "days": [
+      {
+        "activity": "Long Easy Run",
+        "activity_type": "Run",
+        "activity_subtype": "Long",
+        "distance": "10-12 km",
+        "description": "Easy pace (5:00-5:30 min/km), relaxed and conversational pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Run or Rest",
+        "activity_type": "Run",
+        "activity_subtype": "Recovery",
+        "distance": "3-5 km (if running)",
+        "description": "Light and easy pace or complete rest.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Run",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Complete rest day for recovery and adaptation.",
+        "notes": ""
+      },
+      {
+        "activity": "Tempo Run",
+        "activity_type": "Run",
+        "activity_subtype": "Tempo",
+        "distance": "6-8 km",
+        "description": "Warm-up (1-2 km easy), tempo pace (4:00-4:10 min/km), cool down (1-2 km easy).",
+        "notes": ""
+      },
+      {
+        "activity": "Rest or Active Recovery",
+        "activity_type": "Run",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Light stretching or yoga.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Run",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Complete rest before Saturday's workout.",
+        "notes": ""
+      },
+      {
+        "activity": "Interval Run",
+        "activity_type": "Run",
+        "activity_subtype": "Interval",
+        "distance": "4x800m intervals",
+        "description": "Warm-up (1-2 km easy), intervals at 3:50-3:55 min/km pace with 2-minute recovery jogs, cool down (1-2 km easy).",
+        "notes": ""
+      }
+    ]
+  },
+  "Week 2": {
+    "phase": "Base",
+    "days": [
+      {
+        "activity": "Long Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Long",
+        "distance": "60-70 km",
+        "description": "Endurance pace, 80–85% of FTP.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Swim or Rest",
+        "activity_type": "Swim",
+        "activity_subtype": "Recovery",
+        "distance": "800–1,000 m",
+        "description": "Easy drills and relaxed swimming.",
+        "notes": ""
+      },
+      {
+        "activity": "Brick: Bike + Run",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "40 km bike + 4 km run",
+        "description": "Steady bike, then run off the saddle to adapt.",
+        "notes": ""
+      },
+      {
+        "activity": "Technique Run",
+        "activity_type": "Run",
+        "activity_subtype": "Technique",
+        "distance": "6 km",
+        "description": "Focus on form, cadence, drills included.",
+        "notes": ""
+      },
+      {
+        "activity": "Swim Endurance",
+        "activity_type": "Swim",
+        "activity_subtype": "Endurance",
+        "distance": "1,500–2,000 m",
+        "description": "Continuous sets at moderate pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Rest",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Full rest.",
+        "notes": ""
+      },
+      {
+        "activity": "Interval Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Interval",
+        "distance": "5x5 min at sweet spot",
+        "description": "Warm-up, intervals, cool-down.",
+        "notes": ""
+      }
+    ]
+  },
+  "Week 3": {
+    "phase": "Base",
+    "days": [
+      {
+        "activity": "Long Run",
+        "activity_type": "Run",
+        "activity_subtype": "Long",
+        "distance": "12-14 km",
+        "description": "Easy pace, build endurance.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Swim",
+        "activity_type": "Swim",
+        "activity_subtype": "Recovery",
+        "distance": "800–1,200 m",
+        "description": "Drills and easy laps.",
+        "notes": ""
+      },
+      {
+        "activity": "Bike Endurance",
+        "activity_type": "Cycle",
+        "activity_subtype": "Endurance",
+        "distance": "70-80 km",
+        "description": "Steady zone 2 riding.",
+        "notes": ""
+      },
+      {
+        "activity": "Brick: Bike + Run",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "50 km bike + 6 km run",
+        "description": "Bike at endurance pace, brief run after.",
+        "notes": ""
+      },
+      {
+        "activity": "Tempo Swim",
+        "activity_type": "Swim",
+        "activity_subtype": "Tempo",
+        "distance": "1,200–1,500 m",
+        "description": "Warm-up, main set at threshold effort, cool-down.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Rest",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Complete rest.",
+        "notes": ""
+      },
+      {
+        "activity": "Interval Run",
+        "activity_type": "Run",
+        "activity_subtype": "Interval",
+        "distance": "5x1 km intervals",
+        "description": "Warm-up, 1 km at 4:00/km with 2-min recoveries, cool-down.",
+        "notes": ""
+      }
+    ]
+  },
+  "Week 4": {
+    "phase": "Base",
+    "days": [
+      {
+        "activity": "Long Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Long",
+        "distance": "80-90 km",
+        "description": "Endurance pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Run or Swim",
+        "activity_type": "Run/Swim",
+        "activity_subtype": "Recovery",
+        "distance": "5 km run or 1,000 m swim",
+        "description": "Easy pace or relaxed swim.",
+        "notes": ""
+      },
+      {
+        "activity": "Brick: Bike + Run",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "60 km bike + 8 km run",
+        "description": "Simulates race flow.",
+        "notes": ""
+      },
+      {
+        "activity": "Swim Technique",
+        "activity_type": "Swim",
+        "activity_subtype": "Technique",
+        "distance": "1,500 m",
+        "description": "Drills, catch focus, form work.",
+        "notes": ""
+      },
+      {
+        "activity": "Interval Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Interval",
+        "distance": "6x4 min at threshold",
+        "description": "Warm-up, threshold intervals, cool-down.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Rest",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Rest and recovery.",
+        "notes": ""
+      },
+      {
+        "activity": "Tempo Run",
+        "activity_type": "Run",
+        "activity_subtype": "Tempo",
+        "distance": "8-10 km",
+        "description": "Warm-up, tempo pace (4:15-4:25 min/km), cool-down.",
+        "notes": ""
+      }
+    ]
+  },
+  "Week 5": {
+    "phase": "Build",
+    "days": [
+      {
+        "activity": "Long Run",
+        "activity_type": "Run",
+        "activity_subtype": "Long",
+        "distance": "14-16 km",
+        "description": "Steady easy pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Swim",
+        "activity_type": "Swim",
+        "activity_subtype": "Recovery",
+        "distance": "1,000–1,200 m",
+        "description": "Easy pace drills.",
+        "notes": ""
+      },
+      {
+        "activity": "Interval Run",
+        "activity_type": "Run",
+        "activity_subtype": "Interval",
+        "distance": "6x800m",
+        "description": "Warm-up, intervals 3:45/km, cool-down.",
+        "notes": ""
+      },
+      {
+        "activity": "Brick: Race Pace Bike + Run",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "50 km bike + 10 km run",
+        "description": "Bike at race pace, then run off the bike.",
+        "notes": ""
+      },
+      {
+        "activity": "Swim Threshold",
+        "activity_type": "Swim",
+        "activity_subtype": "Tempo",
+        "distance": "1,500–2,000 m",
+        "description": "Main set at threshold pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Rest",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Full rest.",
+        "notes": ""
+      },
+      {
+        "activity": "Long Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Long",
+        "distance": "90-100 km",
+        "description": "Endurance building ride.",
+        "notes": ""
+      }
+    ]
+  },
+  "Week 6": {
+    "phase": "Build",
+    "days": [
+      {
+        "activity": "Brick: Bike + Run",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "60 km bike + 8 km run",
+        "description": "Race-pace bike followed by steady run.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Swim or Run",
+        "activity_type": "Swim/Run",
+        "activity_subtype": "Recovery",
+        "distance": "Run 5 km or Swim 1,000 m",
+        "description": "Easy active recovery.",
+        "notes": ""
+      },
+      {
+        "activity": "Interval Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Interval",
+        "distance": "4x6 min threshold",
+        "description": "Warm-up, threshold intervals, cool-down.",
+        "notes": ""
+      },
+      {
+        "activity": "Run Endurance",
+        "activity_type": "Run",
+        "activity_subtype": "Endurance",
+        "distance": "12 km",
+        "description": "Steady aerobic build.",
+        "notes": ""
+      },
+      {
+        "activity": "Swim Long",
+        "activity_type": "Swim",
+        "activity_subtype": "Long",
+        "distance": "2,000–2,500 m",
+        "description": "Increase swim endurance.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Rest",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Full rest.",
+        "notes": ""
+      },
+      {
+        "activity": "Tempo Run",
+        "activity_type": "Run",
+        "activity_subtype": "Tempo",
+        "distance": "10 km",
+        "description": "Include warm-up and cool-down.",
+        "notes": ""
+      }
+    ]
+  },
+  "Week 7": {
+    "phase": "Build",
+    "days": [
+      {
+        "activity": "Long Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Long",
+        "distance": "100-110 km",
+        "description": "Endurance ride with sustained efforts.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Swim",
+        "activity_type": "Swim",
+        "activity_subtype": "Recovery",
+        "distance": "1,000 m",
+        "description": "Easy swim and drills.",
+        "notes": ""
+      },
+      {
+        "activity": "Brick: Bike + Run Intervals",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "50 km bike + 6 km run intervals",
+        "description": "Bike steady then run with 4x1 km at tempo.",
+        "notes": ""
+      },
+      {
+        "activity": "Run Intervals",
+        "activity_type": "Run",
+        "activity_subtype": "Interval",
+        "distance": "8x400m",
+        "description": "Speed focus with short recoveries.",
+        "notes": ""
+      },
+      {
+        "activity": "Swim Technique & Endurance",
+        "activity_type": "Swim",
+        "activity_subtype": "Technique",
+        "distance": "1,800 m",
+        "description": "Drills + main set focus on form and pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Rest",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Rest and recovery.",
+        "notes": ""
+      },
+      {
+        "activity": "Tempo Run",
+        "activity_type": "Run",
+                "activity_subtype": "Tempo",
+                "distance": "12 km",
+                "description": "Steady tempo including warm-up/cool-down.",
+                "notes": ""
+      }
+    ]
+  },
+  "Week 8": {
+    "phase": "Build",
+    "days": [
+      {
+        "activity": "Long Run",
+        "activity_type": "Run",
+        "activity_subtype": "Long",
+                "distance": "16-18 km",
+                "description": "Extended easy-run.",
+                "notes": ""
+      },
+      {
+        "activity": "Recovery Swim",
+        "activity_type": "Swim",
+        "activity_subtype": "Recovery",
+                "distance": "1,200 m",
+                "description": "Drills and easy pace.",
+                "notes": ""
+      },
+      {
+        "activity": "Interval Bike",
+        "activity_type": "Cycle",
+                "activity_subtype": "Interval",
+                "distance": "5x5 min at VO₂ max",
+                "description": "High-intensity intervals with rest.",
+                "notes": ""
+      },
+      {
+        "activity": "Brick: Race Simulation",
+        "activity_type": "Brick",
+                "activity_subtype": "Other",
+                "distance": "60 km bike + 10 km run",
+                "description": "Race-pace simulation.",
+                "notes": ""
+      },
+      {
+        "activity": "Swim Endurance",
+        "activity_type": "Swim",
+                "activity_subtype": "Endurance",
+                "distance": "2,500 m",
+                "description": "Long continuous swim.",
+                "notes": ""
+      },
+      {
+        "activity": "Rest",
+                "activity_type": "Rest",
+                "activity_subtype": "Other",
+                "distance": "N/A",
+                "description": "Full rest.",
+                "notes": ""
+      },
+      {
+                "activity": "Tempo Run",
+                "activity_type": "Run",
+                "activity_subtype": "Tempo",
+                "distance": "12 km",
+                "description": "Tempo with warm-up/cool-down.",
+                "notes": ""
+      }
+    ]
+  },
+  "Week 9": {
+    "phase": "Peak",
+    "days": [
+      {
+        "activity": "Long Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Long",
+        "distance": "110-120 km",
+        "description": "Peak endurance ride.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Run",
+        "activity_type": "Run",
+        "activity_subtype": "Recovery",
+        "distance": "6 km",
+        "description": "Very easy pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Brick Intervals",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "60 km bike + 8 km run intervals",
+        "description": "Bike steady, then 4x1 km at race pace.",
+        "notes": ""
+      },
+      {
+        "activity": "Swim Speed",
+        "activity_type": "Swim",
+        "activity_subtype": "Interval",
+        "distance": "1,600 m",
+        "description": "Short fast sets with rest.",
+        "notes": ""
+      },
+      {
+        "activity": "Run Threshold",
+        "activity_type": "Run",
+        "activity_subtype": "Tempo",
+        "distance": "10 km",
+        "description": "Tempo pace sustained effort.",
+        "notes": ""
+      },
+      {
+        "activity": "Rest",
+        "activity_type": "Rest",
+        "activity_subtype": "Other",
+        "distance": "N/A",
+        "description": "Full rest.",
+        "notes": ""
+      },
+      {
+        "activity": "Brick: Full Race Simulation",
+        "activity_type": "Brick",
+        "activity_subtype": "Other",
+        "distance": "90 km bike + 15 km run",
+                "description": "Simulate race-day pacing and nutrition strategy.",
+                "notes": ""
+      }
+    ]
+  },
+  "Week 10": {
+    "phase": "Peak",
+    "days": [
+      {
+        "activity": "Recovery Swim",
+        "activity_type": "Swim",
+        "activity_subtype": "Recovery",
+        "distance": "1,200 m",
+        "description": "Easy technique work.",
+        "notes": ""
+      },
+      {
+        "activity": "Interval Run",
+        "activity_type": "Run",
+        "activity_subtype": "Interval",
+        "distance": "6x800m",
+                "description": "Speed repeats at 3:50/km.",
+                "notes": ""
+      },
+      {
+        "activity": "Bike Tempo",
+        "activity_type": "Cycle",
+        "activity_subtype": "Tempo",
+                "distance": "60 km",
+                "description": "Sustained tempo effort.",
+                "notes": ""
+      },
+      {
+        "activity": "Run Off the Bike",
+        "activity_type": "Run",
+        "activity_subtype": "Other",
+                "distance": "10 km",
+                "description": "Run immediately after bike ride.",
+                "notes": ""
+      },
+      {
+        "activity": "Swim Long",
+                "activity_type": "Swim",
+                "activity_subtype": "Long",
+                "distance": "2,500 m",
+                "description": "Endurance-focused swim.",
+                "notes": ""
+      },
+      {
+                "activity": "Rest",
+                "activity_type": "Rest",
+                "activity_subtype": "Other",
+                "distance": "N/A",
+                "description": "Recovery rest.",
+                "notes": ""
+      },
+      {
+                "activity": "Long Run",
+                "activity_type": "Run",
+                "activity_subtype": "Long",
+                "distance": "18 km",
+                "description": "Steady RR pace.",
+                "notes": ""
+      }
+    ]
+  },
+  "Week 11": {
+    "phase": "Peak",
+    "days": [
+      {
+        "activity": "Long Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Long",
+        "distance": "120 km",
+        "description": "Last peak endurance ride.",
+        "notes": ""
+      },
+      {
+        "activity": "Recovery Swim or Run",
+        "activity_type": "Swim/Run",
+        "activity_subtype": "Recovery",
+        "distance": "Run 6 km or Swim 1,200 m",
+        "description": "Easy recovery session.",
+                "notes": ""
+      },
+      {
+                "activity": "Brick: Short Sharp",
+                "activity_type": "Brick",
+                "activity_subtype": "Other",
+                "distance": "40 km bike + 6 km run",
+                "description": "Fast-paced off-bike effort.",
+                "notes": ""
+      },
+      {
+                "activity": "Swim Speed",
+                "activity_type": "Swim",
+                "activity_subtype": "Interval",
+                "distance": "1,600 m",
+                "description": "Short repeats with rest.",
+                "notes": ""
+      },
+      {
+                "activity": "Run Tempo",
+                "activity_type": "Run",
+                "activity_subtype": "Tempo",
+                "distance": "12 km",
+                "description": "Strong tempo with warm-up/cool-down.",
+                "notes": ""
+      },
+      {
+                "activity": "Rest",
+                "activity_type": "Rest",
+                "activity_subtype": "Other",
+                "distance": "N/A",
+                "description": "Full rest before taper.",
+                "notes": ""
+      },
+      {
+                "activity": "Taper Brick",
+                "activity_type": "Brick",
+                "activity_subtype": "Other",
+                "distance": "30 km bike + 5 km run",
+                "description": "Short race-pace simulation.",
+                "notes": ""
+      }
+    ]
+  },
+  "Week 12": {
+    "phase": "Taper",
+    "days": [
+      {
+        "activity": "Easy Swim",
+        "activity_type": "Swim",
+        "activity_subtype": "Recovery",
+        "distance": "1,000 m",
+        "description": "Relaxed pace, drills.",
+        "notes": ""
+      },
+      {
+        "activity": "Easy Bike",
+        "activity_type": "Cycle",
+        "activity_subtype": "Recovery",
+        "distance": "30 km",
+        "description": "Very easy spin.",
+        "notes": ""
+      },
+      {
+                "activity": "Easy Run",
+                "activity_type": "Run",
+                "activity_subtype": "Recovery",
+                "distance": "5 km",
+                "description": "Light shake-out run.",
+                "notes": ""
+      },
+      {
+                "activity": "Rest or Pre-race Swim",
+                "activity_type": "Swim",
+                "activity_subtype": "Other",
+                "distance": "500 m",
+                "description": "Optional easy swim for looseness.",
+                "notes": ""
+      },
+      {
+                "activity": "Rest",
+                "activity_type": "Rest",
+                "activity_subtype": "Other",
+                "distance": "N/A",
+                "description": "Pre-race rest day.",
+                "notes": ""
+      },
+      {
+                "activity": "Race Day",
+                "activity_type": "Triathlon",
+                "activity_subtype": "Race",
+                "distance": "Standard/Olympic distance",
+                "description": "Swim–Bike–Run all-out effort.",
+                "notes": "Good luck!"
+      }
+    ]
+  }
+}

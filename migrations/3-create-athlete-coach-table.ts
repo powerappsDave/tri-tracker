@@ -19,7 +19,7 @@ db.serialize(() => {
   `);
 
   // Prepare statement for inserting data into athlete_coach
-  const stmt = db.prepare("INSERT INTO athlete_coach (coach_id, athlete_id) VALUES (?, ?)");
+ /*  const stmt = db.prepare("INSERT INTO athlete_coach (coach_id, athlete_id) VALUES (?, ?)");
 
   const athlete_coach_relationships = [
     { coach_id: 1, athlete_id: 2 },
@@ -39,7 +39,7 @@ db.serialize(() => {
     } else {
       console.log(`passed`)
     }
-  });
+  }); */
 });
 
 db.close();

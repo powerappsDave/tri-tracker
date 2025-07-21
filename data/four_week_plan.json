@@ -1,0 +1,146 @@
+[
+  {
+    "activity": "Long Easy Run",
+    "activity_type": "Run",
+    "activity_subtype": "Long",
+    "distance": "12-14 km",
+    "description": "Easy pace (5:00-5:30 min/km), relaxed and conversational pace.",
+    "notes": "",
+    "phase": "Base"
+  },
+  {
+    "activity": "Swim",
+    "activity_type": "Swim",
+    "activity_subtype": "Endurance",
+    "distance": "2000m",
+    "description": "Focus on technique and endurance. Steady pace.",
+    "notes": "",
+    "phase": "Base"
+  },
+  {
+    "activity": "Cycle",
+    "activity_type": "Cycle",
+    "activity_subtype": "Endurance",
+    "distance": "40 km",
+    "description": "Steady pace with focus on cadence. Endurance effort.",
+    "notes": "",
+    "phase": "Base"
+  },
+  {
+    "activity": "Brick Session",
+    "activity_type": "Brick",
+    "activity_subtype": "Endurance",
+    "distance": "20 km cycle + 5 km run",
+    "description": "Cycle followed by a run to simulate race conditions.",
+    "notes": "",
+    "phase": "Build"
+  },
+  {
+    "activity": "Tempo Run",
+    "activity_type": "Run",
+    "activity_subtype": "Tempo",
+    "distance": "8-10 km",
+    "description": "Slightly faster pace (4:30-5:00 min/km), focusing on maintaining effort.",
+    "notes": "",
+    "phase": "Build"
+  },
+  {
+    "activity": "Swim",
+    "activity_type": "Swim",
+    "activity_subtype": "Technique",
+    "distance": "1500m",
+    "description": "Focus on form and technique. Moderate pace.",
+    "notes": "",
+    "phase": "Build"
+  },
+  {
+    "activity": "Recovery Run",
+    "activity_type": "Run",
+    "activity_subtype": "Recovery",
+    "distance": "5-6 km",
+    "description": "Easy pace, recovery effort.",
+    "notes": "",
+    "phase": "Build"
+  },
+  {
+    "activity": "Cycle Intervals",
+    "activity_type": "Cycle",
+    "activity_subtype": "Interval",
+    "distance": "10 km warm-up + 6 x 3min hard effort + 10 km cool-down",
+    "description": "Intervals of hard effort followed by rest. Focus on speed.",
+    "notes": "",
+    "phase": "Build"
+  },
+  {
+    "activity": "Long Run",
+    "activity_type": "Run",
+    "activity_subtype": "Long",
+    "distance": "18-20 km",
+    "description": "Slow and steady pace. Focus on endurance.",
+    "notes": "",
+    "phase": "Peak"
+  },
+  {
+    "activity": "Swim",
+    "activity_type": "Swim",
+    "activity_subtype": "Endurance",
+    "distance": "2500m",
+    "description": "Steady pace with focus on technique and endurance.",
+    "notes": "",
+    "phase": "Peak"
+  },
+  {
+    "activity": "Brick Session",
+    "activity_type": "Brick",
+    "activity_subtype": "Endurance",
+    "distance": "30 km cycle + 10 km run",
+    "description": "Simulate race conditions with a long cycle followed by a long run.",
+    "notes": "",
+    "phase": "Peak"
+  },
+  {
+    "activity": "Recovery Swim",
+    "activity_type": "Swim",
+    "activity_subtype": "Recovery",
+    "distance": "1500m",
+    "description": "Easy pace, focusing on recovery.",
+    "notes": "",
+    "phase": "Peak"
+  },
+  {
+    "activity": "Race Day (Sprint Triathlon)",
+    "activity_type": "Race",
+    "activity_subtype": "Race",
+    "distance": "750m swim, 20 km cycle, 5 km run",
+    "description": "Race day. Perform at your best!",
+    "notes": "Prepare mentally and physically for race day!",
+    "phase": "Race Week"
+  },
+  {
+    "activity": "Recovery Run",
+    "activity_type": "Run",
+    "activity_subtype": "Recovery",
+    "distance": "5 km",
+    "description": "Very easy pace, recovery effort.",
+    "notes": "",
+    "phase": "Race Week"
+  },
+  {
+    "activity": "Swim",
+    "activity_type": "Swim",
+    "activity_subtype": "Recovery",
+    "distance": "1000m",
+    "description": "Easy swim, focus on relaxation and recovery.",
+    "notes": "",
+    "phase": "Race Week"
+  },
+  {
+    "activity": "Rest",
+    "activity_type": "Rest",
+    "activity_subtype": "Other",
+    "distance": "N/A",
+    "description": "Rest day. Allow your body to recover.",
+    "notes": "",
+    "phase": "Race Week"
+  }
+]

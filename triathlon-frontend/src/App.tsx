@@ -1,27 +1,22 @@
-/* import { useState, useEffect } from 'react';
-import trainingPlan from './data/trainingPlan.json'; */
-import UserHeader from './components/UserHeader';
-import TrainingWeeksList from './components/TrainingWeeksList';
-import TrainingDaysData from './components/TrainingDaysData';
-import { useState } from 'react';
-import TrainingDayItemData from './components/TrainingDayItemView';
-import AthleteDropdown from './components/AthleteDropdown';
-import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import CustomCalendar from './components/Calendar';
+import Login from './pages/Login';
+import LoginForm from "./components/LoginForm";
 
 export interface IState {
   loggedInUser: {
     id: number;
     name: string;
     email: string;
-    role: string
-  };
+    role: string;
+  } | null; // loggedInUser can be null initially
 
   displayUser: {
     id: number;
     name: string;
     email: string;
-    role: string
+    role: string;
   };
 
   login: {
@@ -33,78 +28,58 @@ export interface IState {
     name: string;
     email: string;
     password: string;
-    planLength: number;
-    selectedCoach: number;
+    plan_length: number;
+    selected_coach: number;
     role: string;
-  }
+    start_date: string;
+  };
 }
 
-function App() {
-  const userId = 2;
+const App: React.FC = () => {
+  const [loggedInUser, setLoggedInUser] = useState<IState['loggedInUser']>(null);  // initialized to null
+  const [userId, setUserId] = useState<number | null>(null);
 
-  const [loggedInUser, setLoggedInUser] = useState<IState["loggedInUser"]>(
-    {
-      id: 0,
-      name: '',
-      email: '',
-      role: ''
+  useEffect(() => {
+    if (userId !== null) {
+      console.log("Fetching UserId");
+
+      const fetchUserData = async () => {
+        try {
+          console.log(`loggedInUserID ${userId}`)
+          const res = await fetch(`http://localhost:3000/api/users?userId=${userId}`);
+          const data = await res.json();
+
+          if (data) {
+            setLoggedInUser(data[0]);
+            console.log(loggedInUser?.name)
+          }
+        } catch (error) {
+          console.error("Error fetching user details:", error);
+        }
+      };
+
+      fetchUserData();
     }
-  );
-
-  const [displayUser, setDisplayUser] = useState<IState["loggedInUser"]>({
-      id: 0,
-      name: '',
-      email: '',
-      role: ''
-    });
-
-
-  //const role = "athlete"
-  const [weekNumber, setWeekNumber] = useState(1);
-  const [dayId, setDayId] = useState<number | null>(null);
-  const [refreshWeekOnUpdate, setRefreshWeekOnUpdate] = useState<boolean>(false);
-  const [sidePanelMinimised, setSidePanelMinimised] = useState<boolean>(false);
-
-  console.log(`user role: ${loggedInUser?.role}`);
+  }, [userId]);
 
   return (
-    <>
-    <div className='max-w-screen'>
-      <div className="text-white bg-gray-600 pb-4 pt-4 flex flex-row">
-        <UserHeader userId={userId} setUser={setLoggedInUser} />
-        <div className={`ml-auto mr-8`}>
-          <a href='' className='m-4 mt-0 mb-0 cursor-pointer font-bold transition delay-150 duration-300 ease-in-out hover:underline hover:text-amber-900'>My Training</a>
-          <a href='' className='m-4 mt-0 mb-0 cursor-pointer font-bold transition delay-150 duration-300 ease-in-out hover:underline hover:text-amber-900'>About</a>
-          <a href='' className='m-4 mt-0 mb-0 cursor-pointer font-bold transition delay-150 duration-300 ease-in-out hover:underline hover:text-amber-900'>Contact</a>
-        </div>
-      </div>
-      <div className=' bg-gray-950 min-h-screen'>
-        
-      <div className="flex flex-row justify-center items-center h-auto">
-          <div className={`${sidePanelMinimised ? 'w-32' : 'w-auto'} bg-gray-300 border-r-4 border-amber-300  lg:h-screen scroll-auto flex flex-row`}>{/*left Div*/}
-            <div className=''>
-              <h2 className={`${sidePanelMinimised ? 'text-xs' : 'text-xl'} font-bold text-amber-900 ml-2`}>Welcome User,</h2>
-              <AthleteDropdown loggedInUser={loggedInUser} setDisplayUser={setDisplayUser} minimiseSide={sidePanelMinimised} />
-              <TrainingWeeksList userId={displayUser?.id} onWeekSelect={setWeekNumber} selectedWeek={weekNumber} setDayId={setDayId} minimiseSide={sidePanelMinimised}/>
-            </div>
-            <div className='w-auto pt-64'>
-              {!sidePanelMinimised ? (<FontAwesomeIcon icon={faChevronCircleLeft} className='mr-2 cursor-pointer text-gray-50' onClick={() => setSidePanelMinimised(prev => !prev)}/>) : (<FontAwesomeIcon icon={faChevronCircleRight} className='mr-2 cursor-pointer text-gray-50' onClick={() => setSidePanelMinimised(prev => !prev)}/>)}
-            </div>
-            
-            {/* <button onClick={() => setMinimiseSide(prev => !prev)} className='bg-amber-50'>Minimise</button> */}
-            </div>
-            <div className='lg:h-screen w-xs sm:w-sm md:w-3xl lg:w-4xl bg-gray-300 pr-2'>
-              <TrainingDaysData userId={displayUser?.id} weekNumber={weekNumber} onDaySelected={setDayId} refreshWeekOnUpdate={refreshWeekOnUpdate} setRefreshWeekOnUpdate={setRefreshWeekOnUpdate} />
-                <div className='p-2 rounded-sm ml-3'>
-                  {dayId === null ? (<h2>Select a day to view data</h2>): (<TrainingDayItemData dayId={dayId} setRefreshWeekOnUpdate={setRefreshWeekOnUpdate} userRole={loggedInUser.role}/>)}
-                  {/* <TrainingDayItemData dayId={dayId} setRefreshWeekOnUpdate={setRefreshWeekOnUpdate} userRole={loggedInUser.role}/> */}
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            loggedInUser !== null ? <CustomCalendar loggedInUser={loggedInUser} /> : <Navigate to="/login" replace />
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            loggedInUser === null ? <LoginForm setUserId={setUserId} /> : <Navigate to="/" replace />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
