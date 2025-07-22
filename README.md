@@ -47,12 +47,16 @@ npm install
 **gitbash
 npx ts-node migrations/init-db.ts
 npx ts-node migrations/1-create-user-table.ts
-npx ts-node migrations/2-create-trainingweek-table.ts
-npx ts-node migrations/3-create-trainingday-table.ts
-npx ts-node migrations/4-create-athlete-coach-table.ts
+npx ts-node migrations/2-create-trainingday-table.ts
+npx ts-node migrations/3-create-athlete-coach-table.ts
 
 
 ## Starting the app
+
+Register as a coach first
+Then register a user as an athlete selecting a four week plan
+
+Login as either coach or athlete to view and edit workout plan
 
 Backend
 cd tri-tracker
