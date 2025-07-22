@@ -316,7 +316,7 @@ const LoginForm: React.FC<ILoginProps> = ({ setUserId }) => {
         {/* Start date for the athlete */}
         {!displayLoginForm && registerUserDetails.role === 'Athlete' && (
           <>
-            <label>Choose a start date for your training plan:</label>
+            <label className="text-white">Training plan start date:</label>
             <input
               type="date"
               id="startDate"
